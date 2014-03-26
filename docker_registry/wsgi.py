@@ -26,3 +26,7 @@ else:
     application = docker_registry.app
     # uwsgi
     app = application
+
+
+def console_script():
+    os.execv('/bin/echo', ['hello'])
